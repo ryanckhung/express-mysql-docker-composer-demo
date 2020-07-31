@@ -26,8 +26,12 @@ services:
     image: ryanckhung/node-web-app
     ports:
       - "49160:8080"
-    links:
+    # set the db before the web start
+    depends_on:
       - db
+    #links is not needed because under service it's auto link up
+    #links:
+    #  - db
 # Names our volume
 volumes:
   my-db:
