@@ -9,6 +9,10 @@
 4.  goto the browser and run
     http://localhost:49160
     http://localhost:49160/users
+    
+5. after you build the image, you can import and export the docker image
+    ### `docker save <my_local_image> > xxx.tar`
+    ### `docker load --input xxx.tar`
 
 Remark:
 ./backend/database.js host is hardcode to "db"
